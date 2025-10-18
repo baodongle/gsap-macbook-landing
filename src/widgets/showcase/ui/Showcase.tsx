@@ -21,10 +21,10 @@ export const Showcase = () => {
     });
 
     timeline
-      .to('.mask img', {
+      .to('#showcase .mask img', {
         transform: 'scale(1.1)',
       })
-      .to('.content', { opacity: 1, y: 0, ease: 'power1.in' });
+      .to('#showcase .content', { opacity: 1, y: 0, ease: 'power1.in' });
 
     return () => {
       timeline.scrollTrigger?.kill();
