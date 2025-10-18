@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber';
 import { useStore } from '@tanstack/react-store';
 import { setColor, setScale, store } from '@/app/store';
 import { ModelSwitcher } from '@/features/model-switcher';
-import StudioLights from '@/widgets/product-viewer/ui/StudioLights';
+import { StudioLights } from '@/widgets/studio-lights';
 
 export const ProductViewer = () => {
   const { color, scale } = useStore(store, (state) => state);

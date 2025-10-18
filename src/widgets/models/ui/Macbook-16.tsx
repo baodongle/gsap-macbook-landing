@@ -64,7 +64,7 @@ type GLTFResult = GLTF & {
   animations: any[]; // GLTFAction[];
 };
 
-const MacbookModel16 = (props: JSX.IntrinsicElements['group']) => {
+export const MacbookModel16 = (props: JSX.IntrinsicElements['group']) => {
   const color = useStore(store, (state) => state.color);
   const { nodes, materials, scene } = useGLTF(
     '/models/macbook-16-transformed.glb',
@@ -190,5 +190,3 @@ const MacbookModel16 = (props: JSX.IntrinsicElements['group']) => {
 };
 
 useGLTF.preload('/models/macbook-16-transformed.glb');
-
-export default MacbookModel16;

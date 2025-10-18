@@ -26,7 +26,13 @@ export const noChangeParts = [
   'Object_10',
 ];
 
-export const performanceImages = [
+interface PerformanceImage {
+  id: string;
+  src: string;
+  alt?: string;
+}
+
+export const performanceImages: PerformanceImage[] = [
   { id: 'p1', src: '/performance1.png' },
   { id: 'p2', src: '/performance2.png' },
   { id: 'p3', src: '/performance3.png' },
@@ -36,7 +42,15 @@ export const performanceImages = [
   { id: 'p7', src: '/performance7.png' },
 ];
 
-export const performanceImgPositions = [
+interface PerformanceImgPosition {
+  id: string;
+  left?: number;
+  right?: number;
+  bottom?: number;
+  transform?: string;
+}
+
+export const performanceImgPositions: PerformanceImgPosition[] = [
   {
     id: 'p1',
     left: 5,
