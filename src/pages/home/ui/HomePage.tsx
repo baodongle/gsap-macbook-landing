@@ -1,6 +1,7 @@
 import { Hero } from '@/widgets/hero';
 import { NavBar } from '@/widgets/nav-bar';
 import { ProductViewer } from '@/widgets/product-viewer';
+import { Showcase } from '@/widgets/showcase';
 
 export const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ export const HomePage = () => {
       <main>
         <Hero />
         <ProductViewer />
+        <Showcase />
       </main>
     </>
   );
