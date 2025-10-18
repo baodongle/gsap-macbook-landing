@@ -46,6 +46,7 @@ export default [
       'fsecond/prefer-destructured-optionals': 'off',
       'import/no-default-export': 'off',
       'import/no-named-as-default': 'off',
+      '@regru/prefer-early-return/prefer-early-return': 'warn',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/naming-convention': 'off',
       '@typescript-eslint/no-unsafe-call': 'off',
