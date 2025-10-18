@@ -4,9 +4,12 @@ import { useGSAP } from '@gsap/react';
 
 export const Showcase = () => {
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
+  const reduceMotion = useMediaQuery({
+    query: '(prefers-reduced-motion: reduce)',
+  });
 
   useGSAP(() => {
-    if (isTablet) {
+    if (isTablet || reduceMotion) {
       return;
     }
 
@@ -17,25 +20,33 @@ export const Showcase = () => {
         end: 'bottom top',
         scrub: true,
         pin: true,
+        invalidateOnRefresh: true,
       },
     });
 
     timeline
       .to('#showcase .mask img', {
-        transform: 'scale(1.1)',
+        scale: 1.1,
       })
-      .to('#showcase .content', { opacity: 1, y: 0, ease: 'power1.in' });
+      .to('#showcase .content', { opacity: 1, y: 0, ease: 'none' });
 
     return () => {
       timeline.scrollTrigger?.kill();
       timeline.kill();
     };
-  }, [isTablet]);
+  }, [isTablet, reduceMotion]);
 
   return (
     <section id="showcase">
       <div className="media">
-        <video loop muted autoPlay playsInline src="/videos/game.mp4" />
+        <video
+          loop
+          muted
+          autoPlay
+          playsInline
+          preload="metadata"
+          src="/videos/game.mp4"
+        />
         <div className="mask">
           <img src="/mask-logo.svg" alt="" />
         </div>
