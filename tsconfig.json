@@ -3,7 +3,7 @@
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
@@ -13,7 +13,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
@@ -21,7 +23,7 @@
     "strict": true,
     "types": ["vite/client"]
   },
-  "files": [],
+  "files": ["reset.d.ts"],
   "include": [],
   "references": [
     {
