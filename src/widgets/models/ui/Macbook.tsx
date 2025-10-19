@@ -64,7 +64,7 @@ type GLTFResult = GLTF & {
   animations: any[]; // GLTFAction[];
 };
 
-const MacbookModel = (props: JSX.IntrinsicElements['group']) => {
+export const MacbookModel = (props: JSX.IntrinsicElements['group']) => {
   const { color, texture } = useStore(store, (state) => state);
   const { nodes, materials, scene } = useGLTF(
     '/models/macbook-transformed.glb',
@@ -171,11 +171,7 @@ const MacbookModel = (props: JSX.IntrinsicElements['group']) => {
         material={materials.JvMFZolVCdpPqjj}
         rotation={[Math.PI / 2, 0, 0]}
       />
-      <mesh
-        geometry={nodes.Object_123.geometry}
-        material={materials.sfCQkHOWyrsLmor}
-        rotation={[Math.PI / 2, 0, 0]}
-      >
+      <mesh geometry={nodes.Object_123.geometry} rotation={[Math.PI / 2, 0, 0]}>
         <meshBasicMaterial map={screen} />
       </mesh>
       <mesh
@@ -188,5 +184,3 @@ const MacbookModel = (props: JSX.IntrinsicElements['group']) => {
 };
 
 useGLTF.preload('/models/macbook-transformed.glb');
-
-export default MacbookModel;

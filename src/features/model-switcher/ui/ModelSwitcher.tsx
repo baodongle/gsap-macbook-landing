@@ -5,9 +5,8 @@ import {
   type PresentationControlProps,
   PresentationControls,
 } from '@react-three/drei';
+import { MacbookModel14, MacbookModel16 } from '@/widgets/models';
 import { fadeMeshes, moveGroup } from '../lib';
-import MacbookModel14 from '../models/Macbook-14';
-import MacbookModel16 from '../models/Macbook-16';
 
 const OFFSET_DISTANCE = 5;
 const SCALE_LARGE_DESKTOP = 0.08;

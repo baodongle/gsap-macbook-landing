@@ -1,5 +1,9 @@
+import { Features } from '@/widgets/features';
+import { Footer } from '@/widgets/footer';
 import { Hero } from '@/widgets/hero';
+import { Highlights } from '@/widgets/highlights';
 import { NavBar } from '@/widgets/nav-bar';
+import { Performance } from '@/widgets/performance';
 import { ProductViewer } from '@/widgets/product-viewer';
 import { Showcase } from '@/widgets/showcase';
 
@@ -11,7 +15,11 @@ export const HomePage = () => {
         <Hero />
         <ProductViewer />
         <Showcase />
+        <Performance />
+        <Features />
+        <Highlights />
       </main>
+      <Footer />
     </>
   );
 };
