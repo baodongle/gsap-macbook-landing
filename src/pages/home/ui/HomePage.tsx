@@ -1,4 +1,5 @@
 import { Features } from '@/widgets/features';
+import { Footer } from '@/widgets/footer';
 import { Hero } from '@/widgets/hero';
 import { Highlights } from '@/widgets/highlights';
 import { NavBar } from '@/widgets/nav-bar';
@@ -18,6 +19,7 @@ export const HomePage = () => {
         <Features />
         <Highlights />
       </main>
+      <Footer />
     </>
   );
 };
