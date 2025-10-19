@@ -1,5 +1,6 @@
 import { Features } from '@/widgets/features';
 import { Hero } from '@/widgets/hero';
+import { Highlights } from '@/widgets/highlights';
 import { NavBar } from '@/widgets/nav-bar';
 import { Performance } from '@/widgets/performance';
 import { ProductViewer } from '@/widgets/product-viewer';
@@ -15,6 +16,7 @@ export const HomePage = () => {
         <Showcase />
         <Performance />
         <Features />
+        <Highlights />
       </main>
     </>
   );
