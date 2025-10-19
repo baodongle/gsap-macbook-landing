@@ -5,8 +5,9 @@
     <img src="https://img.shields.io/badge/-GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" />
     <img src="https://img.shields.io/badge/-Three.js-27136A?style=for-the-badge&logo=three.js&logoColor=white" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white">
+    <img src="https://img.shields.io/badge/nx-143055?style=for-the-badge&logo=nx&logoColor=white">
     <img src="https://img.shields.io/badge/-CodeRabbit-FF6C37?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Hostinger-674CC4?style=for-the-badge&logo=hostinger&logoColor=white" />
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -14,7 +15,7 @@
 1. ✨ [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
-4. 🤸 [More about Nx](#quick-start)
+4. 🤸 [Quick Start](#quick-start)
 
 ## <a name="introduction">✨ Introduction</a>
 
@@ -26,8 +27,6 @@ Apple-style 3D website built with React, Three.js, GSAP, and TailwindCSS! Showca
 
 - **[GSAP](https://gsap.com/)** is a powerful JavaScript animation library used in this project to create dynamic, scroll-driven visuals. Features include SplitText animations for bold text reveals, ScrollTrigger for timeline control, parallax scrolling, pinned sections, scroll-synced video playback, seamless multi-section timelines, image masking effects, and a fully custom animated carousel.
 
-- **[Hostinger](https://jsm.dev/mbook-hostinger)** is a web hosting platform used in this project to deploy and manage the live website. Features include fast and reliable hosting, a user-friendly control panel, one-click app installations, domain management, SSL certification, scalable server resources, and strong uptime guarantees to ensure smooth production deployment.
-
 - **[React](https://react.dev/)** is a declarative JavaScript library for building interactive UIs. It provides the component structure for modular development, allowing smooth integration of GSAP animations, reusable logic for scroll behavior, and support for responsive layout and state-driven UI features like carousels and video sections.
 
 - **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework that allows developers to design custom user interfaces by applying low-level utility classes directly in HTML, streamlining the design process.
@@ -35,8 +34,6 @@ Apple-style 3D website built with React, Three.js, GSAP, and TailwindCSS! Showca
 - **[Three.js](https://threejs.org/)** is a powerful JavaScript 3D library used in this project to render interactive 3D graphics in the browser. Features include WebGL-based rendering, support for cameras, lights, and materials, 3D model importing, geometry and texture manipulation, scene graph management, animation capabilities, raycasting for interactivity, and integration with physics and post-processing effects for immersive experiences.
 
 - **[Vite](https://vitejs.dev/)** is a lightning-fast build tool and development server that powers this project’s workflow. It enables instant hot module replacement, fast startup, and optimized production builds—ideal for an animation-heavy React site with smooth, real-time development feedback and minimal config.
-
-- **[Zustand](https://zustand-demo.pmnd.rs/)** is a lightweight and flexible state management library for React. In this project, it’s used to manage the global state efficiently, enabling reactive updates with minimal boilerplate. Features include simple store creation, easy state slicing, middleware support for logging and persistence, seamless integration with React components, and performant state updates without unnecessary re-renders.
 
 ## <a name="features">🔋 Features</a>
 
