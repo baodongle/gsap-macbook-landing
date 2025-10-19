@@ -85,6 +85,13 @@ const ModelScroll = () => {
         setTexture('/videos/feature-5.mp4');
       })
       .to('.box5', { opacity: 1, y: 0 });
+
+    return () => {
+      modelTimeline.scrollTrigger?.kill();
+      modelTimeline.kill();
+      timeline.scrollTrigger?.kill();
+      timeline.kill();
+    };
   }, []);
 
   return (

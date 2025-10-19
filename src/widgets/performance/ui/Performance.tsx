@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import gsap from 'gsap';
 import { useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
@@ -91,7 +90,7 @@ export const Performance = () => {
         {performanceImages.map((item, index) => {
           return (
             <img
-              key={index}
+              key={item.id}
               src={item.src}
               className={item.id}
               alt={item.alt || `Performance Image #${index + 1}`}
