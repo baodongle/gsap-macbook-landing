@@ -6,7 +6,7 @@ export const Highlights = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
 
   useGSAP(() => {
-    gsap.to(['.left-column', '.right-column'], {
+    const animation = gsap.to(['.left-column', '.right-column'], {
       scrollTrigger: {
         trigger: '#highlights',
         start: isMobile ? 'bottom bottom' : 'top center',
@@ -17,6 +17,11 @@ export const Highlights = () => {
       duration: 1,
       ease: 'power1.inOut',
     });
+
+    return () => {
+      animation.scrollTrigger?.kill();
+      animation.kill();
+    };
   });
 
   return (
